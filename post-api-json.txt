@@ -1,0 +1,20 @@
+http://localhost:7081/users
+
+{
+    "uname":"vedantchimote",
+    "email":"vedantchimote@gmail.com",
+    "password":"vedantchimote",
+    "city":"nagpur",
+    "contactNo":"8354545456"
+}
+
+http://localhost:7081/vehicles/1
+
+{
+  "vname": "fzs",
+  "company": "YAMAHA",
+  "vnumber": "mh12rv3333",
+  "vtype": "sbike",
+  "purchaseDate": "2024-07-14",
+  "price":34343.343
+}

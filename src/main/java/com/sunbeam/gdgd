@@ -1,0 +1,15 @@
+@Entity
+@NoArgsConstructor
+@Getter
+@Setter
+@AllArgsConstructor
+@Table(name = "vehicles")
+public class Vehicle {
+    // ... other fields and methods
+
+    @ManyToOne
+    @JoinColumn(name = "customer_id", referencedColumnName = "uid", nullable = false,
+                  foreignKey = @ForeignKey(name = "FK_VEHICLE_CUSTOMER",
+                                            value = ForeignKeyValue.CASCADE))
+    private Customer customer;
+}
